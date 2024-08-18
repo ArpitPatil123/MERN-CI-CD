@@ -1,0 +1,13 @@
+version: '1'
+services:
+  frontend:
+    build: 
+      context: ./client
+    ports: 
+      - 3001:80
+
+  backend:
+    build: 
+      context: ./api/
+    ports: 
+      - 8082:4000
