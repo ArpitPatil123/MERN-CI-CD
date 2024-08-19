@@ -1,0 +1,7 @@
+apiVersion: v1 
+kind: ConfigMap 
+metadata: 
+  name: mongo-config 
+  namespace: default 
+data:
+  mongo-url: mongo-service # url of your mongo database here it is a service 
